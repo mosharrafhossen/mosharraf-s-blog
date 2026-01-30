@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>মোশাররাফের ব্লগ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="logo">মোশাররাফের ব্লগ</div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>চিন্তা, প্রযুক্তি ও ভবিষ্যৎ</h1>
+  <p>জ্ঞান ও আধুনিক ভাবনার ব্লগ</p>
+</section>
+
+<!-- Search & Filter -->
+<div class="tools">
+  <input type="text" id="search" class="search-box" placeholder="Search articles...">
+
+  <div class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="technology">Technology</button>
+    <button class="filter-btn" data-category="education">Education</button>
+    <button class="filter-btn" data-category="ai">AI</button>
+  </div>
+</div>
+
+<!-- Posts -->
+<main class="container">
+  <section class="posts">
+
+    <article class="card" data-category="technology">
+      <div class="thumb"></div>
+      <div class="card-content">
+        <span class="badge">Technology</span>
+        <h2>প্রযুক্তি আমাদের জীবনে</h2>
+        <div class="meta">২২ সেপ্টেম্বর ২০২৫</div>
+        <p>আধুনিক প্রযুক্তি আমাদের জীবনকে সহজ করেছে...</p>
+        <a href="articles/technology.html" class="read-more">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="card" data-category="education">
+      <div class="thumb"></div>
+      <div class="card-content">
+        <span class="badge">Education</span>
+        <h2>ডিজিটাল শিক্ষা ব্যবস্থার ভবিষ্যৎ</h2>
+        <div class="meta">১৫ সেপ্টেম্বর ২০২৫</div>
+        <p>ডিজিটাল শিক্ষা শেখার ধরণ বদলে দিচ্ছে...</p>
+        <a href="articles/digital-education.html" class="read-more">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="card" data-category="ai">
+      <div class="thumb"></div>
+      <div class="card-content">
+        <span class="badge">AI</span>
+        <h2>কৃত্রিম বুদ্ধিমত্তা ও আগামীর বিশ্ব</h2>
+        <div class="meta">১০ সেপ্টেম্বর ২০২৫</div>
+        <p>AI ভবিষ্যতের কাজ ও জীবনধারা বদলে দেবে...</p>
+        <a href="articles/future-ai.html" class="read-more">Read Article →</a>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<!-- Comment Section -->
+<section class="comments">
+  <div class="comment-box">
+    <h2>মন্তব্য</h2>
+
+    <form id="commentForm">
+      <input type="text" id="name" placeholder="আপনার নাম" required>
+      <textarea id="comment" placeholder="আপনার মন্তব্য লিখুন..." required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+
+    <div id="commentList"></div>
+  </div>
+</section>
+
+<footer>
+  © ২০২৫ • আমার ব্লগ
+</footer>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
